@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../GDIIndexBar.podspec
 
 SPEC CHECKSUMS:
-  GDIIndexBar: 38a250ad02cea73fcb50a1cdad815b726a13a39e
+  GDIIndexBar: 0e506ee0ab68622ae37d022454753f1df36ec5f5
 
 COCOAPODS: 0.36.4

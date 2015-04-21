@@ -127,6 +127,8 @@ typedef enum {
 @property (assign, nonatomic) UIOffset textShadowOffset UI_APPEARANCE_SELECTOR;
 
 
+@property (nonatomic, copy) UIImage *searchImage;
+
 /*!
  * Initializes the index bar with an associated table view.
  */

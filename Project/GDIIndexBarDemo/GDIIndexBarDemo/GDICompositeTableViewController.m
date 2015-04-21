@@ -38,17 +38,24 @@
 
 - (NSUInteger)numberOfIndexesForIndexBar:(GDIIndexBar *)indexBar
 {
-    return self.dataModel.sectionNames.count;
+    return self.dataModel.sectionNames.count + 1;
 }
 
 - (NSString *)stringForIndex:(NSUInteger)index
 {
-    return [self.dataModel.sectionNames objectAtIndex:index];
+    if (index == 0) {
+        return UITableViewIndexSearch;
+    }
+
+    return [self.dataModel.sectionNames objectAtIndex:index - 1];
 }
 
 - (void)indexBar:(GDIIndexBar *)indexBar didSelectIndex:(NSUInteger)index
 {
-    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index]
+    if (index == 0) {
+        return;
+    }
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index - 1]
                           atScrollPosition:UITableViewScrollPositionTop
                                   animated:NO];
 }
