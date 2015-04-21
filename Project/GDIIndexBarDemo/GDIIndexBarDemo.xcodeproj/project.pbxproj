@@ -37,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2896D196953F4FACAC3B3289 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		772C153C18748B8800B41560 /* GDICompositeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDICompositeTableViewController.h; sourceTree = "<group>"; };
 		772C153D18748B8800B41560 /* GDICompositeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDICompositeTableViewController.m; sourceTree = "<group>"; };
 		772C153F187490A300B41560 /* GDIMockDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDIMockDataModel.h; sourceTree = "<group>"; };
@@ -61,6 +60,8 @@
 		772CDA1018731BC400AE98BC /* GDIIndexBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDIIndexBarDemoTests.m; sourceTree = "<group>"; };
 		772CDA1A18731E3800AE98BC /* GDIDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDIDemoTableViewController.h; sourceTree = "<group>"; };
 		772CDA1B18731E3800AE98BC /* GDIDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDIDemoTableViewController.m; sourceTree = "<group>"; };
+		87582CB3AB571E1D79A9C399 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		955D121E70F5D785EDD182ED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C31FD36FA9F541E0963B374D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2A6BD9C3467141A7A34D38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				955D121E70F5D785EDD182ED /* Pods.debug.xcconfig */,
+				87582CB3AB571E1D79A9C399 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		772CD9D918731BC300AE98BC = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +106,7 @@
 				772CDA0A18731BC400AE98BC /* GDIIndexBarDemoTests */,
 				772CD9E418731BC300AE98BC /* Frameworks */,
 				772CD9E318731BC300AE98BC /* Products */,
-				2896D196953F4FACAC3B3289 /* Pods.xcconfig */,
+				3D2A6BD9C3467141A7A34D38 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,7 +301,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -429,7 +439,7 @@
 		};
 		772CDA1518731BC400AE98BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2896D196953F4FACAC3B3289 /* Pods.xcconfig */;
+			baseConfigurationReference = 955D121E70F5D785EDD182ED /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -443,7 +453,7 @@
 		};
 		772CDA1618731BC400AE98BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2896D196953F4FACAC3B3289 /* Pods.xcconfig */;
+			baseConfigurationReference = 87582CB3AB571E1D79A9C399 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
