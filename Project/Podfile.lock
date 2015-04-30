@@ -6,9 +6,9 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   GDIIndexBar:
-    :path: ../GDIIndexBar.podspec
+    :path: "../GDIIndexBar.podspec"
 
 SPEC CHECKSUMS:
-  GDIIndexBar: 0e506ee0ab68622ae37d022454753f1df36ec5f5
+  GDIIndexBar: 9066088a7b6cd62b9acd0e43ba0f16f61c532302
 
 COCOAPODS: 0.36.4

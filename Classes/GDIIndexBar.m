@@ -18,7 +18,7 @@
 #define kDefaultTruncatedRowText @"•"
 #define kStandardButtonWidth 44.f
 #define kShowDebugOutlines 0
-#define kDefaultSearchImageName @"index-search"
+#define kDefaultSearchImageName @"GDI-index-search"
 
 @implementation GDIIndexBar {
     NSUInteger _numberOfIndexes;
@@ -637,9 +637,7 @@ CGPoint CGPointAdd(CGPoint point1, CGPoint point2) {
         return _searchImage;
     }
 
-    NSString *bundlePath = [[NSBundle bundleForClass:[GDIIndexBar class]] pathForResource:@"GDIIndexBar" ofType:@"bundle"];
-    NSBundle *projectBundle = [NSBundle bundleWithPath:bundlePath];
-    UIImage *image = [UIImage imageWithContentsOfFile:[projectBundle pathForResource:kDefaultSearchImageName ofType:@"png"]];
+    UIImage *image = [UIImage imageNamed:kDefaultSearchImageName];
 
     return image;
 }
