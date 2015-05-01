@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
 
                     `GDIIndexBar` is supports being added directly to a `UITableView` as a child subview, or can exist in a different view than the table while still positioning automatically. *NOTE:* In order to correctly receive touch events as a subview of a `UITableView`, the `delaysContentTouches` property is automatically set to `NO`.
                    DESC
-  s.homepage     = "https://github.com/gdavis/GDIIndexBar"
+  s.homepage     = "https://github.com/naithar/GDIIndexBar"
   s.screenshots  = "http://f.cl.ly/items/2c32450e1K3j2P1t242r/GDIIndexBar-3.png", "http://f.cl.ly/items/2x2H2x0A3T3k0i3y0p1i/GDIIndexBar-2.png"
   s.license      = 'MIT'
   s.author       = { "Grant Davis" => "grant@grantdavisinteractive.com" }
-  s.source       = { :git => "https://github.com/gdavis/GDIIndexBar.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/naithar/GDIIndexBar.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
